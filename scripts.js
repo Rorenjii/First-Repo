@@ -7,8 +7,10 @@ function addFour() {
 	return true;
 }
 
-if (!addFour()) {
-	console.log("this is a string!!");
-} else { 
-	console.log("Strings are for n00bs");
+function areStringsForNoobs() {
+	if (!addFour()) {
+		console.log("this is a string!!");
+	} else { 
+		console.log("Strings are for n00bs");
+	}
 }
