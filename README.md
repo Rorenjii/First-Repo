@@ -15,3 +15,6 @@ function multiplyAll(arr) {
 }
 // Modify values below to test your code
 multiplyAll([[1,2],[3,4],[5,6,7]]);
+
+Up above is javascript, which belongs in the "scripts.js" file,
+this is merely a simple readme for this application.
