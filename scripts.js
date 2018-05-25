@@ -6,3 +6,9 @@ function addFour() {
 	console.log(fourInt + fourInt);
 	return true;
 }
+
+if (!addFour()) {
+	console.log("this is a string!!");
+} else { 
+	console.log("Strings are for n00bs");
+}
