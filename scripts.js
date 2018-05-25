@@ -9,8 +9,10 @@ function addFour() {
 
 function areStringsForNoobs() {
 	if (!addFour()) {
-		console.log("this is a string!!");
+		console.log("Strings are for EVERYONE!");
+		return false;
 	} else { 
 		console.log("Strings are for n00bs");
+		return true;
 	}
 }
