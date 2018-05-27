@@ -4,7 +4,11 @@ function addFour() {
 	$.ajax({
 		url: "https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + summonerName + "?api_key=" + apiKey,
 		success : function(result){
-			$("h2").html(result);
+			$("h2").append(result);
+		},
+		error : function(xhr,status,error){
+			$("h2").append(status);
+			$("h2").append(error);
 		}
 	});
 	return true;
