@@ -1,10 +1,12 @@
 function addFour() {
-	var fourString = "4";
-	var fourInt = 4;
-	console.log(fourString + fourInt);
-	console.log("Yay, you logged a number, but 4 + 4 isn't 44...");
-	console.log(fourInt + fourInt);
-	$("h2").append("<p> 4 + 4 = 44 </p>");
+	var summonerName = $("#summonerName").value();
+	var apiKey = $("#apiKey").value();
+	$.ajax({
+		url: "https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + summonerName + "?api_key=" + apiKey,
+		success : function(result){
+			$("h2").html(result);
+		}
+	});
 	return true;
 }
 
