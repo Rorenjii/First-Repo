@@ -1,6 +1,6 @@
 function addFour() {
-	var summonerName = $("#summonerName").value();
-	var apiKey = $("#apiKey").value();
+	var summonerName = $("#summonerName").val();
+	var apiKey = $("#apiKey").val();
 	$.ajax({
 		url: "https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + summonerName + "?api_key=" + apiKey,
 		success : function(result){
