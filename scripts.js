@@ -2,7 +2,7 @@ function addFour() {
 	var summonerName = $("#summonerName").val();
 	var apiKey = $("#apiKey").val();
 	$.ajax({
-		url: "172.58.86.174:8080/api/" + summonerName,
+		url: "http://172.58.86.174:8080/api/" + summonerName,
 		success : function(result){
 			$("h2").append(result);
 		},
