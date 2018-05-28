@@ -67,5 +67,5 @@ function titleCase() {
 }
 
 function printResult(str){
-    document.getElementById("#result").innerHTML = str;
+    document.getElementById("result").innerHTML = str;
 }
